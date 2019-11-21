@@ -22,8 +22,12 @@ cd into the directory
 cd giphy-search
 ```
 
-run npm start to run the webpack dev server
+run npm i to install modules and dependencies
+```
+npm i
+```
 
+run npm start to run the webpack dev server
 ```
 npm start
 ```
