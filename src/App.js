@@ -27,8 +27,6 @@ const App = () => {
     setFavorites([]);
   }, []);
 
-  console.log(favorites);
-
   return (
     <div>
       <header>Giphy Finder</header>
