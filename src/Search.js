@@ -19,7 +19,7 @@ export const Search = () => {
   }
 
   return (
-    <div>
+    <>
       <Link to='favorites'>Go to Favorites</Link>
       <div>
         <form
@@ -28,7 +28,7 @@ export const Search = () => {
             e.preventDefault();
             requestGifs();
           }}>
-          <label htmlFor='search-input'>
+          <label className='search-input-label' htmlFor='search-input'>
             Search for Gifs:
             <input
               id='search-input'
@@ -54,8 +54,8 @@ export const Search = () => {
           <Results search={search} />
         </div>
       ) : (
-        <h2>No gifs yet</h2>
+        <div className='no-results'>No results. Search for some GIFs!</div>
       )}
-    </div>
+    </>
   );
 };

@@ -1,5 +1,5 @@
 import { hot } from 'react-hot-loader/root';
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { SearchContext } from './SearchContext';
 import { FavoritesContext } from './FavoritesContext';
 import { Search } from './Search';
@@ -22,6 +22,12 @@ const App = () => {
     search,
     setSearch
   ]);
+
+  useEffect(() => {
+    setFavorites([]);
+  }, []);
+
+  console.log(favorites);
 
   return (
     <div>

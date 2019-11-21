@@ -7,18 +7,20 @@ export const Favorites = () => {
   const { favorites } = useContext(FavoritesContext);
 
   return (
-    <div>
-      <Link to='/'>Find More Gifs</Link>
-      <h1>Favorites</h1>
-      <div className='favorites-container'>
+    <>
+      <Link to="/">Find more GIFs</Link>
+      <h1>My Favorites</h1>
+      <div className="favorites-container">
         {favorites === null ? (
-          <h2>No favorites</h2>
+          <div className="no-results">
+            You don't have any favorites. Find some GIFs!
+          </div>
         ) : (
           favorites.map(gif => (
             <Giphy id={gif.id} key={gif.id} media={gif.images} alt={gif.slug} />
           ))
         )}
       </div>
-    </div>
+    </>
   );
 };
