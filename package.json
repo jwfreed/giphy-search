@@ -1,0 +1,45 @@
+{
+  "name": "giphy-search",
+  "version": "1.0.0",
+  "description": "use to search for giphys",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode development",
+    "test": "jest"
+  },
+  "author": "Jonathan Freed",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.7.1",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^1.7.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
+    "prettier": "^1.19.1",
+    "webpack-dotenv-plugin": "^2.1.0"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/preset-react": "^7.7.0",
+    "@babel/runtime-corejs2": "^7.6.3",
+    "@reach/router": "^1.2.1",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.3.2",
+    "css-loader": "^3.2.0",
+    "eslint-config-react-app": "^5.0.2",
+    "jest": "^24.9.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-hot-loader": "^4.12.15",
+    "react-test-renderer": "^16.11.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "browserslist": "> 0.25%, not dead"
+}
