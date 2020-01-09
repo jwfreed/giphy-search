@@ -10,7 +10,7 @@ export const Search = () => {
   const url = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.API_KEY}&q=${searchTerm}`;
 
   async function requestGifs() {
-    setSearch([]);
+    setSearch(() => []);
     const result = await fetch(url);
     result
       .json()

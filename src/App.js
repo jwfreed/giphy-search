@@ -13,14 +13,14 @@ const App = () => {
 
   const [favorites, setFavorites] = useState(null);
 
-  const favoritesValue = useMemo(() => ({ favorites, setFavorites }), [
-    favorites,
-    setFavorites
-  ]);
-
   const searchValue = useMemo(() => ({ search, setSearch }), [
     search,
     setSearch
+  ]);
+
+  const favoritesValue = useMemo(() => ({ favorites, setFavorites }), [
+    favorites,
+    setFavorites
   ]);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <header>Giphy Finder</header>
       <main>
         <ErrorBoundary>
@@ -42,7 +42,7 @@ const App = () => {
           </SearchContext.Provider>
         </ErrorBoundary>
       </main>
-    </div>
+    </>
   );
 };
 

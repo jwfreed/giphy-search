@@ -13,7 +13,7 @@ export const Giphy = ({ id, media, slug }) => {
 
   const addGifToFavorites = giphy => {
     const newFavorites =
-      favorites.length == 0 ? giphy : [favorites, giphy].flat(Infinity);
+      favorites.length === 0 ? giphy : [favorites, giphy].flat(Infinity);
 
     setFavorites(newFavorites);
   };
