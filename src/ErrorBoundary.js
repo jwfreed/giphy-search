@@ -19,9 +19,9 @@ class ErrorBoundary extends Component {
   }
 
   render() {
-    if (this.state.hasError) {
-      return <Redirect to='/' />;
-    }
+    // if (this.state.hasError) {
+    //   return <Redirect to='/' />;
+    // }
     if (this.state.hasError) {
       return (
         <h3>
