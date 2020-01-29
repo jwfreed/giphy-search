@@ -28,7 +28,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'public/'),
     port: 3001,
-    publicPath: 'http://localhost:3000/dist/',
+    publicPath: 'http://localhost:3001/dist/',
     hotOnly: true
   },
   plugins: [new webpack.HotModuleReplacementPlugin(), new DotenvPlugin()]
